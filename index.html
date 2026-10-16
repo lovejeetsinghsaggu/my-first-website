@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovejeet's Website</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+nav {
+    background-color: darkblue;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+section {
+    padding: 60px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <img src="https://picsum.photos/300/200" alt="My website picture">
+    <p>Hello! My name is Lovejeet.</p>
+    <p>I am learning website development.</p>
+    <button onclick="alert('Hello Lovejeet! Welcome to your website!')">Click Me</button>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my personal website!</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>My name is Lovejeet.</p>
+    <p>I am learning how to build websites.</p>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="alert('Thank you for your message!'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <br><br>
+
+        <input type="email" placeholder="Your Email" required>
+        <br><br>
+
+        <textarea placeholder="Your Message" required></textarea>
+        <br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
